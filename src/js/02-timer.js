@@ -69,7 +69,6 @@ return;
         
         }
 
-
         const timeCountdown = () => {
             if (timerId) {
                 clearInterval(timerId);
@@ -84,8 +83,6 @@ return;
     },
   };
   
-
-
 
 flatpickr(input,options)
  
