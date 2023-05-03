@@ -14,6 +14,7 @@ document.body.style.backgroundColor = getRandomHexColor();
 
   function changeColor () {
     startBtn.disabled = true;
+    randomColor();
 timerId = setInterval(randomColor,1000);
   }
 
