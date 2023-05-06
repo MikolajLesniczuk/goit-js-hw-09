@@ -11,7 +11,6 @@ const input = document.querySelector('#datetime-picker')
 const startBtn = document.querySelector('button[data-start]');
 
 
-
 function convertMs(ms) {
       const second = 1000;
       const minute = second * 60;
@@ -46,7 +45,6 @@ return;
      }
      startBtn.disabled=false;
 
-
      const newTime = () => {
         const actually = new Date() ;
         const selectData = new Date(selectedDates[0])
@@ -75,6 +73,7 @@ return;
               }
              newTime();
             timerId= setInterval(newTime,1000)
+            startBtn.disabled=true
             }
 
 
